@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>CS50 Legends</title>
+        <script>
+            function blinkr() {
+                let arrowr = document.querySelector('#arrowright');
+                if (arrowr.style.visibility === 'hidden') {
+                    arrowr.style.visibility = 'visible';
+                } else {
+                    arrowr.style.visibility = 'hidden';
+                }
+            }
+
+            function blinkl() {
+                let arrowl = document.querySelector('#arrowleft');
+                if (arrowl.style.visibility === 'hidden') {
+                    arrowl.style.visibility = 'visible';
+                } else {
+                    arrowl.style.visibility = 'hidden';
+                }
+            }
+            window.setInterval(blinkr, 600);
+            window.setInterval(blinkl, 600);
+        </script>
+    </head>
+
+    <body>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Course description</li>
+                <li class="breadcrumb-item"><a href="subreddit.html">Subreddit</a></li>
+                <li class="breadcrumb-item"><a href="syllabus.html">Testimonial</a></li>
+            </ol>
+        </nav>
+        <img src="CS50 Legends.png" alt="CS50 Legends" class="image">
+        <h1 class="bluetext"><b>Course description</b></h1>
+        <p class="pinktext">Visit our <strong>canal</strong>.</p>
+        <div class="text-center">
+            <i class="arrow right" id="arrowright"></i>
+            <button type="button" class="btn btn-outline-info"><a href="https://www.youtube.com/@cs50/featured">CS50 Legends</a></button>
+            <i class="arrow left" id="arrowleft"></i>
+        </div>
+    </body>
+
+</html>
